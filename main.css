@@ -1,0 +1,54 @@
+:root {
+  --dark: #292C35;
+  --light: #F1F1F1;
+  --bright: #d7dbdb;
+  --label: #111;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+
+.body.bright {
+  background: var(--light);
+}
+
+.body h3 {
+  color: var(--light);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.body.bright h3 {
+  color: var(--dark);
+}
+
+.toggle {
+  background: var(--label);
+  display: flex;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle.bright {
+  background: var(--bright);
+}
+
+.toggle-ball {
+  position: relative;
+  margin-left: -25px;
+  padding: .8rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background: var(--light);
+}
+
+.toggle.bright .toggle-ball {
+  margin: 0 -25px 0 0;
+  background: var(--dark);
+}
